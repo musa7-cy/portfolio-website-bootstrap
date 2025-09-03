@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa Hussein- Software Engineer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .skill-bar {
+            height: 8px;
+        }
+        
+        .project-card {
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .social-links a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: #6c757d;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #495057;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-code-slash"></i> MUSA HUSSEIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Hi, I'm Musa Hussein</h1>
+                    <p class="lead mb-4">Full-Stack Software Engineer passionate about creating innovative solutions and building scalable applications.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#projects" class="btn btn-light btn-lg">View My Work</a>
+                        <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#resumeModal">Download Resume</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://via.placeholder.com/300x300/6c757d/ffffff?text=Profile" alt="Profile" class="img-fluid rounded-circle mb-4" style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">About Me</h2>
+                    <p class="lead text-muted">Get to know more about my background and expertise</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3">My Journey</h3>
+                            <p class="card-text">With over 5 years of experience in software development, I specialize in building robust web applications using modern technologies. I'm passionate about clean code, user experience, and continuous learning.</p>
+
+                            <!-- Accordion for detailed info -->
+                            <div class="accordion" id="aboutAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation">
+                                            Education
+                                        </button>
+                                    </h2>
+                                    <div id="collapseEducation" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+                                        <div class="accordion-body">
+                                            <strong>B.S. Computer Science</strong> - University of Technology (2019)<br> Graduated Magna Cum Laude with focus on Software Engineering and Data Structures.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExperience">
+                                            Experience
+                                        </button>
+                                    </h2>
+                                    <div id="collapseExperience" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Senior Software Engineer</strong> - TechCorp Inc. (2022-Present)<br>
+                                            <strong>Software Engineer</strong> - StartupXYZ (2020-2022)<br>
+                                            <strong>Junior Developer</strong> - WebSolutions (2019-2020)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Alert Component -->
+                    <div class="alert alert-info" role="alert">
+                        <i class="bi bi-info-circle-fill"></i>
+                        <strong>Currently Available</strong> for freelance projects and consulting opportunities!
+                    </div>
+
+                    <!-- List Group -->
+                    <div class="card border-0 shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="bi bi-trophy"></i> Achievements</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                AWS Certified Developer
+                                <span class="badge bg-primary rounded-pill">2023</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                React Developer Certification
+                                <span class="badge bg-primary rounded-pill">2022</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Google Cloud Professional
+                                <span class="badge bg-primary rounded-pill">2021</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Scrum Master Certified
+                                <span class="badge bg-primary rounded-pill">2020</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Skills & Technologies</h2>
+                    <p class="lead text-muted">Technologies I work with on a daily basis</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Frontend Development</h5>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>JavaScript/TypeScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>React/Next.js</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>HTML/CSS/Bootstrap</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Backend Development</h5>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Node.js/Express</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Python/Django</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Database (SQL/NoSQL)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-secondary" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Featured Projects</h2>
+                    <p class="lead text-muted">Some of my recent work and side projects</p>
+                </div>
+            </div>
+
+            <!-- Nav Pills for Project Categories -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#all-projects">All Projects</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#web-apps">Web Apps</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#mobile-apps">Mobile Apps</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="all-projects">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card project-card h-100 border-0 shadow">
+                                <img src="https://via.placeholder.com/400x200/007bff/ffffff?text=E-Commerce+Platform" class="card-img-top" alt="Project 1">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">E-Commerce Platform</h5>
+                                    <p class="card-text flex-grow-1">A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-1">React</span>
+                                        <span class="badge bg-success me-1">Node.js</span>
+                                        <span class="badge bg-info me-1">MongoDB</span>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <a href="#" class="btn btn-outline-primary btn-sm flex-fill">Live Demo</a>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm flex-fill">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card project-card h-100 border-0 shadow">
+                                <img src="https://via.placeholder.com/400x200/28a745/ffffff?text=Task+Management+App" class="card-img-top" alt="Project 2">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Task Management App</h5>
+                                    <p class="card-text flex-grow-1">A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-warning me-1">Vue.js</span>
+                                        <span class="badge bg-danger me-1">Firebase</span>
+                                        <span class="badge bg-dark me-1">Socket.io</span>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <a href="#" class="btn btn-outline-primary btn-sm flex-fill">Live Demo</a>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm flex-fill">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card project-card h-100 border-0 shadow">
+                                <img src="https://via.placeholder.com/400x200/dc3545/ffffff?text=Weather+Dashboard" class="card-img-top" alt="Project 3">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Weather Dashboard</h5>
+                                    <p class="card-text flex-grow-1">A responsive weather dashboard with interactive charts, location-based forecasts, and historical weather data visualization.</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-info me-1">React</span>
+                                        <span class="badge bg-secondary me-1">Chart.js</span>
+                                        <span class="badge bg-primary me-1">API Integration</span>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <a href="#" class="btn btn-outline-primary btn-sm flex-fill">Live Demo</a>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm flex-fill">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">What People Say</h2>
+                    <p class="lead text-muted">Testimonials from colleagues and clients</p>
+                </div>
+            </div>
+
+            <!-- Carousel for Testimonials -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card border-0 shadow">
+                                    <div class="card-body text-center p-5">
+                                        <blockquote class="blockquote mb-4">
+                                            <p>"John is an exceptional developer who consistently delivers high-quality code. His attention to detail and problem-solving skills are outstanding."</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <strong>Sarah Johnson</strong>, <cite title="Source Title">Senior Project Manager</cite>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 shadow">
+                                    <div class="card-body text-center p-5">
+                                        <blockquote class="blockquote mb-4">
+                                            <p>"Working with John was a pleasure. He brought innovative solutions to complex problems and always met deadlines."</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <strong>Michael Chen</strong>, <cite title="Source Title">Technical Lead</cite>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Get In Touch</h2>
+                    <p class="lead text-muted">Ready to start your next project? Let's talk!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Contact Information</h5>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <i class="bi bi-envelope-fill text-primary me-3"></i>
+                                    <strong>Email:</strong> musahussein171@email.com
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <i class="bi bi-telephone-fill text-primary me-3"></i>
+                                    <strong>Phone:</strong> +256709550806
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <i class="bi bi-geo-alt-fill text-primary me-3"></i>
+                                    <strong>Location:</strong>Kampala,Uganda
+                                </div>
+                            </div>
+
+                            <div class="social-links text-center mt-4">
+                                <a href="#" class="text-decoration-none"><i class="bi bi-github"></i></a>
+                                <a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-decoration-none"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-decoration-none"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Send a Message</h5>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option selected>Choose...</option>
+                                        <option value="1">Web Development</option>
+                                        <option value="2">Mobile Development</option>
+                                        <option value="3">Consulting</option>
+                                        <option value="4">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        Subscribe to my newsletter for tech updates
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Musa Hussein. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small>Built with Bootstrap 5 & ❤️</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resumeModalLabel">Download Resume</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Choose your preferred format:</p>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-file-earmark-pdf"></i> Download PDF
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="bi bi-file-earmark-word"></i> Download Word
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification (Hidden by default) -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast" role="alert">
+            <div class="toast-header">
+                <strong class="me-auto text-success">Success!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Your message has been sent successfully!
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission with toast notification
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const toast = new bootstrap.Toast(document.getElementById('successToast'));
+            toast.show();
+            this.reset();
+        });
+
+        // Navbar active state
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
